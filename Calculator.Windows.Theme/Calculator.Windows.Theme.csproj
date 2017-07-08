@@ -70,7 +70,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="StyleButton.xaml">
+    <Page Include="ButtonStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
