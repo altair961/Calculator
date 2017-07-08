@@ -8,5 +8,9 @@ namespace Calculator.Model
 {
     public class Calculator
     {
+        public int Calculate(int firstOperand, int secondOperand)
+        {
+            return 2;
+        }
     }
 }

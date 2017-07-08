@@ -15,5 +15,13 @@ namespace Calculator.Model.Tests
         {
             var calculator = new Calculator();
         }
+        
+        [Test]
+        public void OnePlusOne()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate(1, 1);
+            Assert.AreEqual(2, result); 
+        }
     }
 }
