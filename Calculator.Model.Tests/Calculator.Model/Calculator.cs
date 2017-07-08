@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Model
 {
-    public class Class1
+    public class Calculator
     {
     }
 }

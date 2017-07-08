@@ -10,5 +10,10 @@ namespace Calculator.Model.Tests
     [TestFixture]
     public class CalculatorTests
     {
+        [Test]
+        public void CanInitializeCalculator()
+        {
+            var calculator = new Calculator();
+        }
     }
 }
