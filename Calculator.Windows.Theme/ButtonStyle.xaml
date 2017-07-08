@@ -7,11 +7,13 @@
     <Color x:Key="MouseOverBackgroundColor2" A="255" R="0" G="90" B="155" />
     <SolidColorBrush x:Key="BorderBrush" Color="#ECECEC" />
     <Style TargetType="Button">
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+        <Setter Property="BorderThickness" Value="4" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border BorderBrush="{StaticResource BorderBrush}" 
-                            BorderThickness="4"/>
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
