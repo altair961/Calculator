@@ -93,11 +93,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Calculator.Windows.Theme\Calculator.Windows.Theme.csproj">
-      <Project>{34eecc98-7da0-4018-8663-b55a298989b9}</Project>
-      <Name>Calculator.Windows.Theme</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
