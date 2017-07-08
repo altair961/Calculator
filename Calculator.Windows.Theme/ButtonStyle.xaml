@@ -24,6 +24,28 @@
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="True" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="MouseOverAnimation">
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop1"
+                                                        Storyboard.TargetProperty="Color"
+                                                        To="{StaticResource MouseOverBackgroundColor1}"
+                                                        Duration="0:0:0:1"/>
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop2"
+                                                        Storyboard.TargetProperty="Color"
+                                                        To="{StaticResource MouseOverBackgroundColor2}"
+                                                        Duration="0:0:0:1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </MultiTrigger.EnterActions>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
