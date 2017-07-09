@@ -13,7 +13,7 @@
     </Window.Resources>
 
     <StackPanel>
-        <Label Content="This is a Label control." />
+        <Label Content="200+50" />
 
         <Button Height="32" IsEnabled="False">I'm a button!</Button>
     </StackPanel>
