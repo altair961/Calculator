@@ -4,13 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
-        mc:Ignorable="d"
-        Title="MainWindow"
-        Height="320" 
-        Width="230"
-        WindowStyle="None"
-        AllowsTransparency="True"
-        MouseDown="Window_MouseDown">
+        mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="HeaderStyle" TargetType="TextBlock">
+            <Setter Property="Background" Value="Black" />
+        </Style>
+    </Window.Resources>
+
     <StackPanel>
         <Label Content="This is a Label control." />
 

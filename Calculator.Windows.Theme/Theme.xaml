@@ -3,5 +3,6 @@
                     xmlns:local="clr-namespace:Calculator.Windows.Theme">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ButtonStyle.xaml" />
+        <ResourceDictionary Source="WindowStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

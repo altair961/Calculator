@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Calculator.Windows.Theme;component/Theme.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type local:MainWindow}" BasedOn="{StaticResource {x:Type Window}}"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
