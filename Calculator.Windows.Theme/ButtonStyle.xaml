@@ -46,6 +46,20 @@
                                     </Storyboard>
                                 </BeginStoryboard>
                             </MultiTrigger.EnterActions>
+                            <MultiTrigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="MouseOutAnimation">
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop1"
+                                                        Storyboard.TargetProperty="Color"
+                                                        To="{StaticResource BackgroundColor1}"
+                                                        Duration="0:0:0:1"/>
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop2"
+                                                        Storyboard.TargetProperty="Color"
+                                                        To="{StaticResource BackgroundColor2}"
+                                                        Duration="0:0:0:1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>                                
+                            </MultiTrigger.ExitActions>
                         </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
