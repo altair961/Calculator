@@ -10,6 +10,9 @@
     <Color x:Key="MousePressedBackgroundColor1" A="255" R="0" G="156" B="231" />
     <Color x:Key="MousePressedBackgroundColor2" A="255" R="0" G="36" B="72" />
 
+    <Color x:Key="IsNotEnabledBackgroundColor1" A="255" R="233" G="233" B="233" />
+    <Color x:Key="IsNotEnabledBackgroundColor2" A="255" R="244" G="244" B="244" />
+
     <SolidColorBrush x:Key="BorderBrush" Color="#ECECEC" />
     
     <Style TargetType="Button">
@@ -35,6 +38,22 @@
                         <ContentPresenter Margin="{TemplateBinding Padding}" />
                     </Border>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="DisabledAnimation">
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop1"
+                                                        Storyboard.TargetProperty="Color" 
+                                                        To="{StaticResource IsNotEnabledBackgroundColor1}" 
+                                                        Duration="0"/>
+                                        <ColorAnimation Storyboard.TargetName="BackgroundGradientStop2"
+                                                        Storyboard.TargetProperty="Color" 
+                                                        To="{StaticResource IsNotEnabledBackgroundColor2}" 
+                                                        Duration="0"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                        </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsEnabled" Value="True" />
