@@ -8,12 +8,15 @@
     <!--<Style x:Key="ControlBaseStyle" TargetType="{x:Type Window}">
         <Setter Property="Background" Value="Black" />
     </Style>-->
-    <SolidColorBrush x:Key="Brush" Color="#ECECEC" />
-
-    <Style TargetType="Window">
-        <Setter Property="Background" Value="{StaticResource Brush}"/>
+    <SolidColorBrush x:Key="SolidColorBrush" Color="#ECECEC" />
+    
+        <Style TargetType="Window">
+        <Setter Property="Background" Value="{StaticResource SolidColorBrush}"/>
         <Setter Property="Height" Value="320" />
         <Setter Property="Width" Value="230" />
+        <Setter Property="WindowStyle" Value="None" />
+        <Setter Property="AllowsTransparency" Value="True" />
+
         <!--<Setter Property="WindowStyle" Value="None" />-->
         <!--Title="MainWindow"
 
