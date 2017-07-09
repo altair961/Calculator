@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button Width="96" Height="32" IsEnabled="False">I'm a button!</Button>
-    </Grid>
+        Title="MainWindow"
+        Height="320" 
+        Width="230"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+    <StackPanel>
+        <Label Content="This is a Label control." />
+
+        <Button Height="32" IsEnabled="False">I'm a button!</Button>
+    </StackPanel>
 </Window>
