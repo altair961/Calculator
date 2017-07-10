@@ -14,13 +14,10 @@
 
     <StackPanel>
 
-        <Border Height="100" Background="AliceBlue">
-            <Label Content="TEXT">
-
-            </Label>
-
+        <Border>
+            <Label Content="TEXT" />
         </Border>
 
-        <Button Height="32" IsEnabled="True">I'm a button!</Button>
+        <Button  Height="32" IsEnabled="True">I'm a button!</Button>
     </StackPanel>
 </Window>

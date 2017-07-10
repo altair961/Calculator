@@ -5,6 +5,6 @@
         <ResourceDictionary Source="ButtonStyle.xaml" />
         <ResourceDictionary Source="WindowStyle.xaml" />
         <ResourceDictionary Source="LabelStyle.xaml" />
-        <ResourceDictionary Source="RectangleStyle.xaml" />
+        <ResourceDictionary Source="BorderStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
