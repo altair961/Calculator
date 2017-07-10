@@ -12,4 +12,5 @@
         <Setter Property="VerticalAlignment" Value="Center" />
         <!--<Setter Property="Background" Value="#0C0C0C" />-->
     </Style>
+    
 </ResourceDictionary>

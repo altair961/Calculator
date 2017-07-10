@@ -1,14 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Calculator.Windows.Theme">
-    <Color x:Key="BackgroundColor1" A="255" R="0" G="133" B="209" />
-    <Color x:Key="BackgroundColor2" A="255" R="0" G="6" B="194" />
+    <Color x:Key="BackgroundColor1" A="255" R="45" G="45" B="45" />
+    <Color x:Key="BackgroundColor2" A="255" R="45" G="45" B="45" />
     
     <Color x:Key="MouseOverBackgroundColor1" A="255" R="76" G="76" B="76" />
     <Color x:Key="MouseOverBackgroundColor2" A="255" R="76" G="76" B="76" />
 
-    <Color x:Key="MousePressedBackgroundColor1" A="255" R="0" G="156" B="231" />
-    <Color x:Key="MousePressedBackgroundColor2" A="255" R="0" G="36" B="72" />
+    <Color x:Key="MousePressedBackgroundColor1" A="255" R="134" G="181" B="188" />
+    <Color x:Key="MousePressedBackgroundColor2" A="255" R="134" G="181" B="188" />
 
     <Color x:Key="IsNotEnabledBackgroundColor1" A="255" R="233" G="233" B="233" />
     <Color x:Key="IsNotEnabledBackgroundColor2" A="255" R="244" G="244" B="244" />
@@ -101,11 +101,11 @@
                                         <ColorAnimation Storyboard.TargetName="BackgroundGradientStop1"
                                                         Storyboard.TargetProperty="Color"
                                                         To="{StaticResource MousePressedBackgroundColor1}"
-                                                        Duration="0:0:0:1"/>
+                                                        Duration="0:0:0:0"/>
                                         <ColorAnimation Storyboard.TargetName="BackgroundGradientStop2"
                                                         Storyboard.TargetProperty="Color"
                                                         To="{StaticResource MousePressedBackgroundColor2}"
-                                                        Duration="0:0:0:1"/>
+                                                        Duration="0:0:0:0"/>
                                     </Storyboard>
                                 </BeginStoryboard>
                             </MultiTrigger.EnterActions>
