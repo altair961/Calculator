@@ -15,6 +15,6 @@
     <StackPanel>
         <Label Content="200+50" />
 
-        <Button Height="32" IsEnabled="False">I'm a button!</Button>
+        <Button Height="32" IsEnabled="True">I'm a button!</Button>
     </StackPanel>
 </Window>
