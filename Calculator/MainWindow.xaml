@@ -28,8 +28,8 @@
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
             <StackPanel>
-                <Label Content="(2+2)-(10+3)+256/4+1" FontSize="20" HorizontalAlignment="Right" Margin="0, 25, 20, 0" Foreground="#CCCCCC" />
-                <Label Content="56" FontSize="40" HorizontalAlignment="Right" Margin="0, 5, 30, 0"/>    
+                <Label Content="(2+2)-(10+3)+256/4+1" FontSize="20" HorizontalAlignment="Right" Margin="0, 25, 20, 0" Foreground="#919191" />
+                <Label Content="56" FontSize="40" HorizontalAlignment="Right" Margin="0, 5, 30, 0" Foreground="#FFFFFF" />    
             </StackPanel>
 
         </Border>

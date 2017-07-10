@@ -8,7 +8,7 @@
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="Margin" Value="25, 10, 25, 10" />
-        <Setter Property="Foreground" Value="#FFFFFF" />
+        <Setter Property="Foreground" Value="#7B7B7B" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <!--<Setter Property="Background" Value="#0C0C0C" />-->
     </Style>
