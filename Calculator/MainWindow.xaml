@@ -5,57 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        MouseDown="Window_MouseDown" d:DesignHeight="1000">
+        MouseDown="Window_MouseDown">
     <Window.Resources>
         <Style x:Key="HeaderStyle" TargetType="TextBlock">
             <Setter Property="Background" Value="Black" />
         </Style>
     </Window.Resources>
-
-    <StackPanel>
-        <Border>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>                
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
             <Label Content="0" />
         </Border>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Grid.Row="0"><Label>+</Label></Button>
+        <Button Grid.Column="0" Grid.Row="1" Margin="0, 0, 1, 1"><Label>+</Label></Button>
+        <Button Grid.Column="1" Grid.Row="1" Margin="0, 0, 1, 1"><Label>-</Label></Button>
+        <Button Grid.Column="2" Grid.Row="1" Margin="0, 0, 1, 1"><Label>*</Label></Button>
+        <Button Grid.Column="3" Grid.Row="1" Margin="0, 0, 0, 1"><Label>/</Label></Button>
 
-            <Button Grid.Column="1" Grid.Row="0"><Label>-</Label></Button>
-            <Button Grid.Column="2" Grid.Row="0"><Label>*</Label></Button>
-            <Button Grid.Column="3" Grid.Row="0"><Label>/</Label></Button>
+        <Button Grid.Column="0" Grid.Row="2" Margin="0, 0, 1, 1"><Label>7</Label></Button>
+        <Button Grid.Column="1" Grid.Row="2" Margin="0, 0, 1, 1"><Label>8</Label></Button>
+        <Button Grid.Column="2" Grid.Row="2" Margin="0, 0, 1, 1"><Label>9</Label></Button>
+        <Button Grid.Column="3" Grid.Row="2" Margin="0, 0, 0, 1"><Label>C</Label></Button>
 
-            <Button Grid.Column="0" Grid.Row="1"><Label>7</Label></Button>
-            <Button Grid.Column="1" Grid.Row="1"><Label>8</Label></Button>
-            <Button Grid.Column="2" Grid.Row="1"><Label>9</Label></Button>
-            <Button Grid.Column="3" Grid.Row="1"><Label>C</Label></Button>
+        <Button Grid.Column="0" Grid.Row="3" Margin="0, 0, 1, 1"><Label>4</Label></Button>
+        <Button Grid.Column="1" Grid.Row="3" Margin="0, 0, 1, 1"><Label>5</Label></Button>
+        <Button Grid.Column="2" Grid.Row="3" Margin="0, 0, 1, 1"><Label>6</Label></Button>
+        <Button Grid.Column="3" Grid.Row="3" Margin="0, 0, 0, 1"><Label>M</Label></Button>
 
-            <Button Grid.Column="0" Grid.Row="2"><Label>4</Label></Button>
-            <Button Grid.Column="1" Grid.Row="2"><Label>5</Label></Button>
-            <Button Grid.Column="2" Grid.Row="2"><Label>6</Label></Button>
-            <Button Grid.Column="3" Grid.Row="2"><Label>M</Label></Button>
-
-            <Button Grid.Column="0" Grid.Row="3"><Label>1</Label></Button>
-            <Button Grid.Column="1" Grid.Row="3"><Label>2</Label></Button>
-            <Button Grid.Column="2" Grid.Row="3"><Label>3</Label></Button>
-            <Button Grid.Column="3" Grid.Row="3" Grid.RowSpan="2"><Label>=</Label></Button>
-            <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2">
-                <Label>0</Label>
-            </Button>
-            <Button Grid.Column="2" Grid.Row="4">
-                <Label>.</Label>
-            </Button>
-        </Grid>        
-    </StackPanel>
+        <Button Grid.Column="0" Grid.Row="4" Margin="0, 0, 1, 1"><Label>1</Label></Button>
+        <Button Grid.Column="1" Grid.Row="4" Margin="0, 0, 1, 1"><Label>2</Label></Button>
+        <Button Grid.Column="2" Grid.Row="4" Margin="0, 0, 1, 1"><Label>3</Label></Button>
+        <Button Grid.Column="3" Grid.Row="4" Margin="0, 0, 0, 0" Grid.RowSpan="2"><Label>=</Label></Button>
+        <Button Grid.Column="0" Grid.Row="5" Margin="0, 0, 1, 0" Grid.ColumnSpan="2">
+            <Label>0</Label>
+        </Button>
+        <Button Grid.Column="2" Margin="0, 0, 1, 0" Grid.Row="5">
+            <Label>.</Label>
+        </Button>
+    </Grid>        
 </Window>

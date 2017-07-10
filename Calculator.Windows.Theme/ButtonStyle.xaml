@@ -17,8 +17,8 @@
     
     <Style TargetType="Button">
         <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
-        <Setter Property="Margin" Value="5" />
-        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BorderThickness" Value="0" />
         <Setter Property="FontSize" Value="30" />
         <Setter Property="Template">
             <Setter.Value>

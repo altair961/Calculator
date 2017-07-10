@@ -4,7 +4,7 @@
     <SolidColorBrush x:Key="SolidColorBrush" Color="#050505" />
     <Style TargetType="Window">
         <Setter Property="Background" Value="{StaticResource SolidColorBrush}"/>
-        <Setter Property="Height" Value="520" />
+        <!--<Setter Property="Height" Value="520" />-->
         <Setter Property="Width" Value="320" />
         <Setter Property="WindowStyle" Value="None" />
         <Setter Property="AllowsTransparency" Value="True" />
